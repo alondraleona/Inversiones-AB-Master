@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | master.</title>
+<meta name="description" content="Contacta a ventas corporativas de master. o solicita tu cotización por lista.">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2 py-2">
+    <div class="topbar-b2b"><b>¿Eres empresa o contratista?</b> Solicita tu línea de crédito y atención preferencial</div>
+    <div class="d-none d-lg-block">
+      <a href="tel:+51975445306">Central de ventas · 975 445 306 / 969 531 519</a>
+    </div>
+  </div>
+</div>
+<nav class="site-nav navbar navbar-expand-lg sticky-top" aria-label="Principal">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="master. inicio">master<i>.</i></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link" href="sedes.html">Nosotros / Sedes</a></li><li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo B2B</a></li><li class="nav-item"><a class="nav-link" href="empresas.html">Servicios a empresas</a></li><li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li></ul>
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-line" type="button" data-bs-toggle="offcanvas" data-bs-target="#quotePanel" aria-controls="quotePanel">Mi lista</button>
+        <a class="btn btn-coral" href="contacto.html#cotizar">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Inicio</a> / Contacto</div>
+    <h1>Contacto</h1>
+    <p>Habla con ventas corporativas o pide tu cotización por lista.</p>
+  </div>
+</header>
+<main id="contenido" class="section">
+<div class="container">
+  <div class="row g-4">
+    <div class="col-lg-7" id="cotizar">
+      <h2 class="mb-2">Solicita tu cotización</h2>
+      <p class="text-secondary mb-4">Cuéntanos qué necesitas y te respondemos el mismo día hábil.</p>
+      <form action="#" method="post" enctype="multipart/form-data"><div class="row g-3">
+        <div class="col-md-6"><label class="form-label" for="c-emp">Empresa</label><input id="c-emp" name="empresa" class="form-control" required autocomplete="organization"><div class="invalid-feedback">Ingresa la razón social de tu empresa.</div></div>
+        <div class="col-md-6"><label class="form-label" for="c-ruc">RUC</label><input id="c-ruc" name="ruc" class="form-control" required inputmode="numeric" pattern="[0-9]{11}" maxlength="11" title="11 dígitos"><div class="invalid-feedback">El RUC debe tener 11 dígitos.</div></div>
+        <div class="col-md-6"><label class="form-label" for="c-nom">Nombre de contacto</label><input id="c-nom" name="nombre" class="form-control" required autocomplete="name"><div class="invalid-feedback">Ingresa el nombre de la persona de contacto.</div></div>
+        <div class="col-md-6"><label class="form-label" for="c-cargo">Cargo</label><input id="c-cargo" name="cargo" class="form-control" placeholder="Compras, logística, residente de obra"></div>
+        <div class="col-md-6"><label class="form-label" for="c-mail">Correo</label><input id="c-mail" name="correo" class="form-control" type="email" required autocomplete="email"><div class="invalid-feedback">Ingresa un correo válido.</div></div>
+        <div class="col-md-6"><label class="form-label" for="c-tel">WhatsApp o teléfono</label><input id="c-tel" name="telefono" class="form-control" type="tel" required pattern="[0-9 +]{6,}" autocomplete="tel"><div class="invalid-feedback">Ingresa un WhatsApp o teléfono de contacto.</div></div>
+        <div class="col-md-6"><label class="form-label" for="c-tipo">Motivo</label><select id="c-tipo" name="motivo" class="form-select"><option>Cotización de productos</option><option>Línea de crédito</option><option>Despacho a obra</option><option>Asesoría técnica</option><option>Otro</option></select></div>
+        <div class="col-md-6"><label class="form-label" for="c-sede">Sede de preferencia</label><select id="c-sede" name="sede" class="form-select"><option>La más cercana</option><option>Sede Central</option><option>Sede 2</option><option>Sede 3</option><option>Sede 4</option></select></div>
+        <div class="col-12"><label class="form-label" for="c-msg">Mensaje</label><textarea id="c-msg" name="mensaje" class="form-control" rows="4"></textarea></div>
+        <div class="col-12"><label class="form-label" for="c-file">Adjunta tu lista de materiales <span class="fw-normal text-secondary">(opcional)</span></label><input id="c-file" name="lista" type="file" class="form-control" accept=".pdf,.xls,.xlsx,.csv"><div class="form-text">PDF o Excel, hasta 10 MB.</div></div>
+        <div class="col-12"><button type="submit" class="btn btn-coral btn-lg">Enviar solicitud</button></div>
+      </div></form>
+    </div>
+    <div class="col-lg-5">
+      <div class="contact-card">
+        <h2 class="h3">Ventas corporativas</h2>
+        <div class="row-item mt-3"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c.3 2.4 2.7 4.8 5.5 5.5l1.2-1.3-2-1-.9.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.9-1-2L9 9.5z"/></svg><div><a href="https://wa.me/51975445306">+51 975 445 306</a><small>Llamadas y WhatsApp · central de ventas</small><a href="tel:+51969531519">+51 969 531 519</a><small>Llamadas</small></div></div>
+        <div class="row-item"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><a href="mailto:inversionesabmaster@gmail.com">inversionesabmaster@gmail.com</a><small>Cotizaciones y créditos</small></div></div>
+        <div class="row-item"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>Lun a Vie 8:00 a 18:00<small>Sáb 8:00 a 13:00</small></div></div>
+        <a class="btn btn-coral mt-3" href="sedes.html">Ver direcciones de las sedes</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="quotePanel" aria-labelledby="quotePanelLabel">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title h5 m-0" id="quotePanelLabel">Lista de cotización</h2>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="d-flex flex-column h-100" action="https://api.whatsapp.com/send" method="get" target="_blank">
+      <p class="text-secondary small">Escribe tu lista y envíala a ventas. Sin precios en línea: tu ejecutivo responde con la cotización formal.</p>
+      <input type="hidden" name="phone" value="51975445306">
+      <label class="form-label" for="qText">Productos, cantidades y datos de tu empresa</label>
+      <textarea id="qText" name="text" class="form-control" rows="11" required>Hola master., quiero cotizar esta lista:
+Empresa y RUC: 
+Productos y cantidades:
+1. 
+2. 
+3. 
+Obra y fecha requerida: </textarea>
+      <div class="form-text">Escribe un producto por línea, con su SKU o descripción y la cantidad.</div>
+      <div class="mt-auto pt-4 d-grid gap-2">
+        <button type="submit" class="btn btn-wa"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c.3 2.4 2.7 4.8 5.5 5.5l1.2-1.3-2-1-.9.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.9-1-2L9 9.5z"/></svg> Enviar por WhatsApp</button>
+        <a class="btn btn-line" href="mailto:inversionesabmaster@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Enviar por correo</a>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="brand" href="index.html">master<i>.</i></a>
+        <p class="mt-3">Suministros ferreteros e industriales para empresas, obras y contratistas, con stock en cuatro sedes.</p>
+      </div>
+      <div class="col-6 col-lg-2"><h4>Navegación</h4><a href="index.html">Inicio</a><br><a href="sedes.html">Nosotros / Sedes</a><br><a href="catalogo.html">Catálogo B2B</a><br><a href="empresas.html">Servicios a empresas</a><br><a href="contacto.html">Contacto</a></div>
+      <div class="col-6 col-lg-3"><h4>Catálogo</h4><a href="catalogo.html#construccion">Construcción y estructuras</a><br><a href="catalogo.html#herramientas">Herramientas eléctricas</a><br><a href="catalogo.html#electricidad">Electricidad y tableros</a><br><a href="catalogo.html#gasfiteria">Gasfitería y tubos</a><br><a href="catalogo.html#seguridad">Seguridad industrial</a></div>
+      <div class="col-lg-3"><h4>Ventas corporativas</h4><a href="https://wa.me/51975445306">WhatsApp: +51 975 445 306</a><br><a href="tel:+51969531519">Teléfono: 969 531 519</a><br><a href="mailto:inversionesabmaster@gmail.com">inversionesabmaster@gmail.com</a><br><span>Lun a Vie 8:00 a 18:00 · Sáb 8:00 a 13:00</span></div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2"><span>© 2026 Inversiones AB Master S.A.C. Todos los derechos reservados.</span><span>RUC 20606050888</span></div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/51975445306" aria-label="Escribir por WhatsApp"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c.3 2.4 2.7 4.8 5.5 5.5l1.2-1.3-2-1-.9.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.9-1-2L9 9.5z"/></svg><span>Cotiza por WhatsApp</span></a>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
